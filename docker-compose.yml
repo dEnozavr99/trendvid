@@ -1,0 +1,16 @@
+services:
+  trendvid:
+    build: .
+    container_name: trendvid
+    working_dir: /app
+    volumes:
+      - ./:/app
+    command:
+      - --text
+      - "Привіт! Це Docker тест 🚀"
+      - --bg
+      - "/app/assets/video/subway.mp4"
+      - --out
+      - "/app/.output/out.mp4"
+      - --voice
+      - "uk-UA-PolinaNeural"

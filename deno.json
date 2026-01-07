@@ -2,8 +2,8 @@
   "name": "trendvid",
   "version": "0.0.0",
   "tasks": {
-    "dev": "deno run -A src/cli.ts",
-    "check": "deno check src/cli.ts",
+    "dev": "deno run -A src/main.ts",
+    "check": "deno check src/main.ts",
     "test": "deno test -A"
   },
   "imports": {
